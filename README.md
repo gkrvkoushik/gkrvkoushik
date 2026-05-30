@@ -18,7 +18,7 @@
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/gkrvkoushik?label=Followers&style=flat-square&color=e94560&labelColor=1a1a2e)](https://github.com/gkrvkoushik?tab=followers)
 &nbsp;
-[![LeetCode](https://img.shields.io/badge/LeetCode-1595_Rating-e94560?style=flat-square&logo=leetcode&logoColor=white&labelColor=1a1a2e)](https://leetcode.com/gkrvkoushik)
+[![LeetCode](https://img.shields.io/badge/LeetCode-1650_Rating-e94560?style=flat-square&logo=leetcode&logoColor=white&labelColor=1a1a2e)](https://leetcode.com/gkrvkoushik)
 &nbsp;
 [![AWS](https://img.shields.io/badge/AWS-Cloud_Practitioner-e94560?style=flat-square&logo=amazon-aws&logoColor=white&labelColor=1a1a2e)](https://github.com/gkrvkoushik)
 
@@ -137,15 +137,7 @@ Custom Odoo ERP module built under 24h hackathon conditions. Won recognition at 
 
 <br/>
 
-## ◈ GitHub Stats
 
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gkrvkoushik&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=1a1a2e&title_color=e94560&icon_color=e94560&text_color=a8b2d8&include_all_commits=true&count_private=true)](https://github.com/gkrvkoushik)
-&nbsp;
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gkrvkoushik&layout=compact&theme=midnight-purple&hide_border=true&bg_color=1a1a2e&title_color=e94560&text_color=a8b2d8)](https://github.com/gkrvkoushik)
-
-</div>
 
 <div align="center">
 
@@ -166,38 +158,6 @@ Custom Odoo ERP module built under 24h hackathon conditions. Won recognition at 
 <div align="center">
 
 ![Pac-Man](https://raw.githubusercontent.com/gkrvkoushik/gkrvkoushik/output/pacman.svg)
-
-<details>
-<summary>Setup Pac-Man workflow</summary>
-
-Create `.github/workflows/pacman.yml`:
-
-```yaml
-name: Generate Pac-Man
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: huavannis/pacman-contribution-graph@v1.0
-        with:
-          github_user_name: gkrvkoushik
-          outputs: |
-            dist/pacman.svg
-            dist/pacman-dark.svg
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
 
 </div>
 
