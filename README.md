@@ -163,21 +163,6 @@ Custom Odoo ERP module built under 24h hackathon conditions. Won recognition at 
 
 <br/>
 
-## ◈ Credentials
-
-<div align="center">
-
-| Credential | Detail |
-|:---|:---|
-| 🏆 LeetCode | Rating **1650** |
-| 🌍 TCS CodeVita | Global Rank **1333** |
-| ☁️ AWS | Cloud Practitioner Certified |
-| 📜 NPTEL Java | Top **5%** |
-| 🎓 PVPSIT | CGPA **9.11** |
-
-</div>
-
-<br/>
 
 ## ◈ Currently
 
