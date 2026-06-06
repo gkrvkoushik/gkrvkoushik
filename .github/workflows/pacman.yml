@@ -10,25 +10,30 @@ on:
       - main
       - master
 
+# Explicitly grant write permissions to the GITHUB_TOKEN
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
+      # Upgraded to v4 to fix Node.js 20 warnings
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate Pac-Man contribution graph
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Generates the pacman animation file
           outputs: |
             dist/pacman.svg?color_snake=#e94560&color_dots=#1a1a2e,#2a2a4e,#3a3a6e,#4a4a8e,#5a5aae
 
+      # Upgraded to v4 to fix Node.js 20 warnings
       - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
