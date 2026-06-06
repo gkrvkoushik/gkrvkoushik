@@ -1,27 +1,33 @@
-name: Generate Pac-Man Game
+name: Generate Pac-Man Animation
 
 on:
   schedule:
-    - cron: "0 */24 * * *"
+    # Runs at 12:00 AM every day
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
+      - master
 
 jobs:
   generate:
-    permissions:
-      contents: write
-
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
-      - name: Generate Pac-Man Contribution Graph
-        uses: abozanona/pacman-contribution-graph@main
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Pac-Man contribution graph
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Generates the pacman animation file
+          outputs: |
+            dist/pacman.svg?color_snake=#e94560&color_dots=#1a1a2e,#2a2a4e,#3a3a6e,#4a4a8e,#5a5aae
 
-      - name: Push generated files
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
