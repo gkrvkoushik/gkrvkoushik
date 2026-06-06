@@ -153,8 +153,6 @@ Custom Odoo ERP module built under 24h hackathon conditions. Won recognition at 
 
 <br/>
 
-## ◈ Pac-Man
-
 <div align="center">
 
 ![Pac-Man](https://raw.githubusercontent.com/gkrvkoushik/gkrvkoushik/output/pacman.svg)
@@ -166,10 +164,11 @@ Custom Odoo ERP module built under 24h hackathon conditions. Won recognition at 
 
 ## ◈ Currently
 
-- 🔨 Shipping new features on **HireSense** — real-time candidate ranking engine system
-- 🧠 Learning **AI Agents**    
-- 📬 Open to **backend engineering internships** 
-
+- 🚀 Building **HireSense AI** — ATS scoring, resume intelligence & candidate ranking
+- 🤖 Exploring **Agentic AI**, MCP servers, and multi-agent architectures
+- ⚙️ Developing scalable backend systems with Java, Spring Boot & PostgreSQL
+- 📬 Open to **Software Engineering, Backend, and AI Engineering Internships**
+  
 <br/>
 
 ## ◈ Connect
